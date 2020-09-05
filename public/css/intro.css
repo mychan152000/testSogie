@@ -1,0 +1,243 @@
+.intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -120%);
+    text-align: left;
+    font-size: 5rem;
+    font-weight: 500;
+    font-family: norwester !important;
+}
+
+.intro-text-line-1 {
+    font-family: norwester !important;
+    color: #44B6F2 !important;
+}
+
+.intro-text-line-2 {
+    font-family: norwester !important;
+    color: #FF90CE !important;
+}
+
+.intro-text-line-3 {
+    font-family: norwester !important;
+    color: #C886B4 !important;
+}
+
+.intro-text-line-4-container {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -120%);
+}
+
+.intro-text-line-4 {
+    font-weight: 700;
+    color: #3D516E;
+    text-align: center;
+    display: inline-block;
+    font-family: Cambria;
+    font-size: 6rem;
+}
+
+.intro-image-outer {
+    position: relative;
+    width: 80%;
+    transform: translateY(100vh);
+    margin: auto;
+}
+
+.intro-image {
+    width: 70%;
+    margin-left: 2em;
+    margin-top: 4em;
+}
+
+.intro-image-wow {
+    z-index: 100;
+}
+
+.intro-image-happy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+@media (max-width: 48em) {
+    .intro-text {
+        font-size: 5rem;
+    }
+    .intro-text-line-4 {
+        font-size: 6rem;
+    }
+    .intro-image {
+        width: 100%;
+        margin-left: .3em;
+        margin-top: -7em;
+    }
+}
+
+@media (max-width: 36em) {
+    .intro-text {
+        font-size: 4rem;
+    }
+    .intro-text-line-4 {
+        font-size: 3.5rem;
+    }
+    .intro-image {
+        width: 120%;
+        margin-left: -1.5em;
+    }
+}
+
+@media (max-width: 25em) {
+    .intro-text {
+        font-size: 3rem;
+    }
+    .intro-text-line-4 {
+        font-size: 2rem;
+    }
+    .intro-image {
+        width: 120%;
+        margin-left: -1em;
+        margin-top: -7em;
+    }
+}
+
+
+/* intro.css by TrungNDD*/
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 2.3em;
+    text-align: left;
+    font-size: 1.7rem;
+    font-weight: 500;
+    font-family: norwester !important;
+}
+
+.info-text-line {
+    font-size: 1.4em;
+}
+
+.info-img {
+    margin-left: -7em;
+    margin-top: 21em;
+    width: 10em;
+}
+
+#moreBtn {
+    opacity: 0;
+    margin-top: 0%;
+    animation: move-up 0.5s linear 4s forwards;
+}
+
+#intro-2 {
+    display: none;
+    z-index: 2;
+}
+
+.img-mascot {
+    position: absolute;
+    top: 58%;
+    width: 50%;
+    left: 0em;
+}
+
+.speech-bubble {
+    position: absolute;
+    background: #eb8f8f;
+    border-radius: .4em;
+    top: 19em;
+    left: 8em;
+}
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 8%;
+    width: 0;
+    height: 0;
+    border: 1.063em solid transparent;
+    border-top-color: #eb8f8f;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -0.531em;
+    margin-bottom: -1.062em;
+}
+
+.speech-bubble-text {
+    width: 10em;
+    color: #1a1a2e;
+    font-family: norwester !important;
+    margin: 0.5em;
+}
+
+
+/* moreBtn animation*/
+
+@keyframes move-up {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes move-up {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes move-up {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    #moreBtn {}
+    .content-box__btn {
+        font-size: 1em;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .info-text {
+        font-size: 5rem;
+    }
+    .info-text-line {
+        font-size: 1.4em;
+    }
+    .info-img {
+        margin-left: -7em;
+        margin-top: 21em;
+        width: 5em;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    #moreBtn {
+        margin-left: 35%;
+    }
+}
