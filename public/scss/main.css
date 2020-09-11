@@ -1,0 +1,20 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 26 | /   @include respond(tab-port) {
+ * 27 | |     grid-gap: 8px;
+ * 28 | |     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+ * 29 | \   }
+ *    '
+ *   _common.scss 26:3  @import
+ *   _layout.scss 2:9   root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 26 \2502  \250c    @include respond(tab-port) {\a 27 \2502  \2502      grid-gap: 8px;\a 28 \2502  \2502      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));\a 29 \2502  \2514    }\a    \2575 \a   _common.scss 26:3  @import\a   _layout.scss 2:9   root stylesheet";
+}

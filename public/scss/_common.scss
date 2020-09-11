@@ -1,0 +1,130 @@
+@import 'variables';
+%d_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+%box_center {
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+.row {
+  height: 100%;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#child__answer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 12px;
+
+  @include respond(tab-port) {
+    grid-gap: 8px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  @include respond(phone) {
+    grid-gap: 8px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  @include respond(smallPhone) {
+    grid-gap: 8px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+#alert-box h3 {
+  background-color: $second-color;
+  color: $white-color;
+  padding: 5px 10px;
+}
+
+p.pager {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: $img-color;
+}
+h4.question {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: $img-color;
+}
+li.itemAns {
+  // @extend %d_flex;
+  min-height: 60px;
+  height: max-content;
+  line-height: 30px;
+  font-size: 1.3rem;
+  padding: 12px 16px;
+  background-color: #fff2f8;
+  border: 5px solid #fff2f8;
+  border-radius: 25px 8px 25px 8px;
+  color: $img-color;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  @include respond(tab-port) {
+    font-size: 1rem;
+    min-height: 40px;
+    height: max-content;
+    line-height: 20px;
+    padding: 6px 12px;
+  }
+  @include respond(phone) {
+    font-size: 1rem;
+    min-height: 40px;
+    height: max-content;
+    line-height: 20px;
+    padding: 6px 12px;
+  }
+}
+img.question-image {
+  display: block;
+  max-width: 250px;
+  margin: 10px auto;
+  border: 1px solid $border-color;
+  width: 100%;
+  height: auto;
+}
+#choice-block {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#submitbutton {
+  background: #5a6b8c;
+}
+#submitbutton:hover {
+  background: #7b8da6;
+}
+#explanation {
+  margin: 0 auto;
+  padding: 20px;
+  width: 75%;
+}
+.choice-box {
+  display: inline-block;
+  position: relative;
+  font-size: 1rem;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 20px;
+  border: 1px solid #666;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  @include respond(tab-port) {
+    font-size: 0.8rem;
+    height: 40px;
+    line-height: 40px;
+  }
+  @include respond(phone) {
+    font-size: 0.8rem;
+    height: 40px;
+    line-height: 40px;
+  }
+}

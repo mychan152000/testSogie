@@ -1,0 +1,380 @@
+$primary-font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$primary-color: #fff2f8;
+$content-bg: #fac8d5;
+$second-color: #c25e79;
+$img-color: #3d516e;
+%d_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+* {
+  box-sizing: border-box;
+}
+img {
+  vertical-align: middle;
+}
+ul li {
+  color: $img-color;
+}
+h1,
+h4,
+h3,
+p {
+  text-align: center;
+  color: $img-color;
+  padding: 0;
+  margin: 0;
+}
+h4 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+// APPLY FOR HUAN'S CHOICE
+#choice-block {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#submitbutton {
+  background: #5a6b8c;
+}
+#submitbutton:hover {
+  background: #7b8da6;
+}
+#explanation {
+  margin: 0 auto;
+  padding: 20px;
+  width: 75%;
+}
+.choice-box {
+  display: block;
+  text-align: center;
+  margin: 8px auto;
+  padding: 10px 0;
+  border: 1px solid #666;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  width: 80%;
+}
+.demo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  height: 200px;
+  background-color: #5a6b8c;
+}
+.demo::after {
+  bottom: 100%;
+  left: 7%;
+  border: solid transparent;
+  content: ' ';
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: #86bb71;
+  border-width: 10px;
+  margin-left: -10px;
+}
+/*change your default height of webiste here*/
+body {
+  .container-fluid {
+    @extend %d_flex;
+    width: 100vw;
+    height: 100vh;
+    background: $primary-color;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    &__items:nth-child(1) {
+      // background-color: $second-color;
+      width: 85%;
+      height: 100%;
+      @extend %d_flex;
+    }
+    &__items {
+      &__content:nth-child(1) {
+        width: 100%;
+        height: 100%;
+        background-color: $content-bg;
+        position: relative;
+        @extend %d_flex;
+        align-items: flex-end;
+      }
+      &__content:nth-child(2) {
+        width: 100%;
+        height: 100%;
+        // background-color: $second-color;
+        display: none;
+        position: relative;
+        @extend %d_flex;
+        align-items: stretch;
+      }
+    }
+  }
+  .content {
+    &__box {
+      width: 100%;
+      height: 40%;
+      background-color: $second-color;
+      margin: 0 0 10px 0;
+      z-index: 999;
+      position: relative;
+      &__playedBtn {
+        color: white;
+        font-size: 1rem;
+        button {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 30%;
+          border: none;
+          cursor: pointer;
+          height: 40px;
+          outline: none;
+        }
+        button:hover {
+          background-color: wheat;
+        }
+      }
+    }
+    /*Change your mascot's width here*/
+    &__mascot {
+      position: absolute;
+      width: 50%;
+      height: 50%;
+      /*background-color: $img-color;*/
+      left: 0%;
+      bottom: 35%;
+      @extend %d_flex;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+
+    .content__ques__child {
+      &:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 70%;
+        height: 100%;
+        background-color: #fff2f8;
+      }
+      &:nth-child(1) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 30%;
+        height: 100%;
+      }
+    }
+
+    &__ques {
+      margin-top: 10px;
+      width: 100%;
+      height: 60%;
+      background-color: $second-color;
+      @extend %d_flex;
+      /*justify-content: space-between;*/
+      &__child:nth-child(1) {
+        width: 30%;
+        height: 100%;
+        // background-color: $img-color;
+        @extend %d_flex;
+      }
+      &__child:nth-child(2) {
+        width: 70%;
+        height: 100%;
+        background-color: $primary-color;
+        @extend %d_flex;
+      }
+    }
+    &__ans {
+      width: 100%;
+      height: 35%;
+      background-color: $content-bg;
+      border: 8px solid #a591ad;
+      border-radius: 10px;
+      &__child {
+        width: 100%;
+        height: 100%;
+        @extend %d_flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+.child {
+  //mascot
+  &__img {
+    width: 100%;
+    height: 50%;
+    background-color: $img-color;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    //question chat
+  }
+  //question chat
+  &__boxChat {
+    width: 90%;
+    // height: 80%;
+    background-color: whitesmoke;
+    border: 5px solid $img-color;
+    border-radius: 0px 25px 25px 25px;
+    /*border-image: url("https://www.pngkit.com/png/full/584-5843757_pokemon-dialog-box-pokemon-text-box-png.png") 30
+      round;*/
+  }
+  //avatar
+  &__ava {
+    width: 30%;
+    height: 100%;
+    @extend %d_flex;
+    justify-content: start;
+    &__img {
+      width: 120px;
+      height: 120px;
+      border-radius: 100%;
+      background-color: $img-color;
+    }
+  }
+  &__answer {
+    width: 70%;
+    height: 100%;
+    position: relative;
+  }
+}
+//user's chat
+.itemAns {
+  width: 35%;
+  height: 25%;
+  background-color: $primary-color;
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  border: 5px solid $primary-color;
+  border-radius: 25px 8px 25px 8px;
+  @extend %d_flex;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 400px) {
+  p {
+    font-size: 12px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  .choice-box {
+    padding: 5px 0;
+    margin: 5px auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body {
+    .container-fluid {
+      &__items:nth-child(1) {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .content {
+      &__mascot {
+        width: 80%;
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%, -50%);
+      }
+      &__ques {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        &__child:nth-child(1) {
+          height: 22%;
+          width: 30%;
+        }
+        &__child:nth-child(2) {
+          height: 78%;
+          width: 100%;
+        }
+      }
+      &__ans {
+        &__child {
+          flex-direction: column-reverse;
+        }
+      }
+    }
+  }
+  .itemAns {
+    height: 50px;
+    margin-bottom: 6px;
+  }
+  .child {
+    &__img {
+      width: 90px;
+      height: 90px;
+      background-color: $img-color;
+    }
+    &__ava {
+      width: 100%;
+      height: 40%;
+      position: relative;
+      &__img {
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        position: relative;
+        left: 70%;
+        margin: 5px;
+      }
+    }
+    &__answer {
+      width: 100%;
+      height: 60%;
+    }
+  }
+  .choice-box {
+    padding: 8px 0px;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .child {
+    &__ava {
+      &__img {
+        width: 110px;
+        height: 110px;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1000px) {
+  body {
+    .content {
+      &__mascot {
+        width: 40%;
+      }
+    }
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+    .content {
+      &__mascot {
+        width: 30%;
+      }
+    }
+  }
+}

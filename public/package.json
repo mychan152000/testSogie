@@ -1,0 +1,22 @@
+{
+  "name": "akinator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VYA-DevTeam/akinator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VYA-DevTeam/akinator/issues"
+  },
+  "homepage": "https://github.com/VYA-DevTeam/akinator#readme",
+  "devDependencies": {
+    "jest": "^26.1.0"
+  }
+}
