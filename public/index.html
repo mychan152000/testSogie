@@ -1,86 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
-
-<head>
-    <title>Quiz SOGIESC</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/91998e0ee4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
-    <link media="all" rel="stylesheet" href="css/main.css" />
-    <link media="all" rel="stylesheet" href="css/animation.css" />
-    <link media="all" rel="stylesheet" href="css/intro.css" />
-</head>
-
-<body>
-    <section id="intro-1">
-        <div class="container-fluid" id="page_container">
-            <div class="container-fluid__items" id="content-wrap">
-                <div style="height: 100%; width: 100%; display: flex;">
-                    <div id="intro_one" class="container-fluid__items__content">
-                        <div class="intro-text">
-                            <span class="move-fast"><span class="intro-text-line-1">V</span><span class="intro-text-line-1 move-fast-disappear">IETNAM</span></span>
-                            <span class="move-fast"><span class="intro-text-line-2">Y</span><span class="intro-text-line-2 move-normal-disappear">OUTH</span></span>
-                            <span class="move-fast"><span class="intro-text-line-3">A</span><span class="intro-text-line-3 move-slow-disappear">LLIANCE</span></span>
-                        </div>
-
-                        <div class="intro-image-outer">
-                            <div class="intro-image-container intro-image-wow">
-                                <img src="images/Wow.png" class="intro-image" />
-                            </div>
-                            <div class="intro-image-container intro-image-happy">
-                                <img src="images/Happy.png" class="intro-image" />
-                            </div>
-                        </div>
-
-                        <div class="intro-text-line-4-container move-to-center">
-                            <div>
-                                <p class="intro-text-line-4">SOGIESC TEST</p>
-                            </div>
-
-                            <!--Playing button-->
-                            <button id="playBtn" class="content-box__btn content-box__btn--hover">bắt đầu</button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="intro-text-line-4-container" id="moreBtn">
-            <button class="content-box__btn content-box__btn--hover" onclick="btnMoreClicked()">Tìm hiểu thêm</button>
-        </div>
-    </section>
-
-    <section id="intro-2">
-        <div class="container-fluid" id="page_container">
-            <div class="container-fluid__items" id="content-wrap">
-                <div style="height: 100%; width: 100%;">
-                    <div class="info-text" style="animation: none; margin-top: 1em">
-                        <span class="intro-text-line-1 info-text-line sex-oriented" style="font-size: 1.5em">Sex Oriented,</span>
-                        <span class="intro-text-line-2 info-text-line gender-identity-expression" style="font-size: 1.5em">Gender Identity</span>
-                        <span class="intro-text-line-2 info-text-line gender-identity-expression" style="font-size: 1.5em">and Expression,</span>
-                        <span class="intro-text-line-3 info-text-line sex-characteristics">Sex Characteristics</span>
-                    </div>
-
-                    <div style="width: 40%" class="mascot-container">
-                        <img src="images/Default2.png" alt="Our mascot" class="img-mascot" />
-                        <div class="speech-bubble">
-                            <p class="speech-bubble-text">We are VYA and we gonna help you today</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class=" intro-text-line-4-container " id="backBtn ">
-            <button class="content-box__btn content-box__btn--hover " onclick="btnBackClicked() ">Quay lại</button>
-        </div>
-=======
   <head>
     <title>Quiz SOGIESC</title>
     <!-- Required meta tags -->
@@ -156,7 +75,6 @@
 
                 <!--Playing button-->
                 <button
-                  onclick="window.location.href='/quiz.html'"
                   id="playBtn"
                   class="content-box__btn content-box__btn--hover"
                 >
@@ -183,60 +101,26 @@
           <div style="height: 100%; width: 100%">
             <div class="info-text" style="animation: none; margin-top: 1em">
               <span
-                ><span class="intro-text-line-1 info-text-line sex-oriented"
-                  >S</span
-                ><span class="intro-text-line-1 sex-oriented">ex</span></span
+                class="intro-text-line-1 info-text-line sex-oriented"
+                style="font-size: 1.5em"
+                >Sex Oriented,</span
               >
               <span
-                ><span class="intro-text-line-1 info-text-line sex-oriented"
-                  >O</span
-                ><span class="intro-text-line-1 sex-oriented"
-                  >riented</span
-                ></span
+                class="intro-text-line-2 info-text-line gender-identity-expression"
+                style="font-size: 1.5em"
+                >Gender Identity</span
               >
               <span
-                ><span
-                  class="intro-text-line-2 info-text-line gender-identity-expression"
-                  >G</span
-                ><span class="intro-text-line-2 gender-identity-expression"
-                  >ender</span
-                ></span
+                class="intro-text-line-2 info-text-line gender-identity-expression"
+                style="font-size: 1.5em"
+                >and Expression,</span
               >
-              <span
-                ><span
-                  class="intro-text-line-2 info-text-line gender-identity-expression"
-                  >I</span
-                ><span class="intro-text-line-2 gender-identity-expression"
-                  >dentiy and</span
-                ></span
-              >
-              <span
-                ><span
-                  class="intro-text-line-2 info-text-line gender-identity-expression"
-                  >E</span
-                ><span class="intro-text-line-2 gender-identity-expression"
-                  >xpression &</span
-                ></span
-              >
-              <span
-                ><span
-                  class="intro-text-line-3 info-text-line sex-characteristics"
-                  >S</span
-                ><span class="intro-text-line-3 sex-characteristics"
-                  >ex</span
-                ></span
-              >
-              <span
-                ><span
-                  class="intro-text-line-3 info-text-line sex-characteristics"
-                  >C</span
-                ><span class="intro-text-line-3 sex-characteristics"
-                  >haracteristics</span
-                ></span
+              <span class="intro-text-line-3 info-text-line sex-characteristics"
+                >Sex Characteristics</span
               >
             </div>
 
-            <div style="width: 40%">
+            <div style="width: 40%" class="mascot-container">
               <img
                 src="images/Default2.png"
                 alt="Our mascot"
@@ -244,8 +128,7 @@
               />
               <div class="speech-bubble">
                 <p class="speech-bubble-text">
-                  //* Insert our introduction here *// (Hover/touch the text to
-                  view explaination)
+                  We are VYA and we gonna help you today
                 </p>
               </div>
             </div>
@@ -261,7 +144,6 @@
           Quay lại
         </button>
       </div>
->>>>>>> akin/intro-2
     </section>
 
     <!-- Optional JavaScript -->
@@ -298,11 +180,5 @@
             intro.remove();
         });
     </script>-->
-<<<<<<< HEAD
-</body>
-
-</html>
-=======
   </body>
 </html>
->>>>>>> akin/intro-2
