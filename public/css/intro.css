@@ -116,11 +116,18 @@
     font-size: 1.7rem;
     font-weight: 500;
     font-family: norwester !important;
+<<<<<<< HEAD
     margin-left: -1.5em;
 }
 
 .info-text-line {
     font-size: 1.2em;
+=======
+}
+
+.info-text-line {
+    font-size: 1.4em;
+>>>>>>> akin/intro-2
 }
 
 .info-img {
@@ -142,16 +149,28 @@
 
 .img-mascot {
     position: absolute;
+<<<<<<< HEAD
     top: 40%;
     width: 79%;
     left: -3em;
+=======
+    top: 58%;
+    width: 50%;
+    left: 0em;
+>>>>>>> akin/intro-2
 }
 
 .speech-bubble {
     position: absolute;
+<<<<<<< HEAD
     background: #FF90CE;
     border-radius: .4em;
     top: 13em;
+=======
+    background: #eb8f8f;
+    border-radius: .4em;
+    top: 19em;
+>>>>>>> akin/intro-2
     left: 8em;
 }
 
@@ -163,7 +182,11 @@
     width: 0;
     height: 0;
     border: 1.063em solid transparent;
+<<<<<<< HEAD
     border-top-color: #FF90CE;
+=======
+    border-top-color: #eb8f8f;
+>>>>>>> akin/intro-2
     border-bottom: 0;
     border-left: 0;
     margin-left: -0.531em;
@@ -172,7 +195,11 @@
 
 .speech-bubble-text {
     width: 10em;
+<<<<<<< HEAD
     color: #32404b;
+=======
+    color: #1a1a2e;
+>>>>>>> akin/intro-2
     font-family: norwester !important;
     margin: 0.5em;
 }
@@ -211,12 +238,17 @@
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
+<<<<<<< HEAD
+=======
+    #moreBtn {}
+>>>>>>> akin/intro-2
     .content-box__btn {
         font-size: 1em;
     }
 }
 
 
+<<<<<<< HEAD
 /* Iphone 6/7 6/7 plus and X*/
 
 @media only screen and (min-width: 300px) and (min-height: 600px) {
@@ -257,6 +289,21 @@
     }
     .speech-bubble:after {
         margin-left: 6.5em;
+=======
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .info-text {
+        font-size: 5rem;
+    }
+    .info-text-line {
+        font-size: 1.4em;
+    }
+    .info-img {
+        margin-left: -7em;
+        margin-top: 21em;
+        width: 5em;
+>>>>>>> akin/intro-2
     }
 }
 
@@ -267,6 +314,7 @@
     #moreBtn {
         margin-left: 35%;
     }
+<<<<<<< HEAD
     #intro-2 .info-text {
         left: 55%;
         font-size: 450%;
@@ -284,4 +332,6 @@
     .speech-bubble:after {
         margin-left: 1em;
     }
+=======
+>>>>>>> akin/intro-2
 }

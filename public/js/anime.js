@@ -55,8 +55,13 @@ function btnBackClicked() {
 }
 
 // hovering effects
+<<<<<<< HEAD
 let SO_INTRO = "Sexual orientation intro";
 let GIE_INTRO = "Gender identity and expression intro";
+=======
+let SO_INTRO = "Sex oriented intro";
+let GIE_INTRO = "Gender identity intro";
+>>>>>>> akin/intro-2
 let SC_INTRO = "Sex characteristics intro";
 let IMG_EXPLAIN = "images/explain.png";
 let IMG_DEFAULT = "images/Default2.png";
