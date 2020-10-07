@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link media="all" rel="stylesheet" href="css/result.css" />
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM "
+    crossorigin="anonymous "></script>
+  <script src="js/result.js"></script>
+</head>
+
+<body class="container">
+  <header>
+    <span>V</span>
+    <span>Y</span>
+    <span>A</span>
+  </header>
+  <div class="row">
+    <h1>Your result is...</h1>
+  </div>
+  <div class="row result-box align-items-center">
+    <!-- <span>Bán vô ái toàn tính (không mù giới)</span> -->
+    <span>{{ result }}</span>
+  </div>
+  <div class="row">
+    <h3>Bạn có hài lòng với kết quả? Cho chúng mình biết nhé!</h3>
+    <a href="#form_box" onclick="showFeedbackForm()" class="btn shadow-none" id="feedback_btn">
+      Phản hồi
+    </a>
+  </div>
+  <div class="row" id="form_box"></div>
+</body>
+
+</html>

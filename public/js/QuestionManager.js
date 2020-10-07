@@ -2,19 +2,44 @@ var priQuestResult = "";
 var priQuestBinaryAnswers = "";
 var secondQuestStack = [];
 var ignoredQuestionIndices = [];
+function post(path, params, method = "post") {
+  // The rest of this code assumes you are not using a library.
+  // It can be made less wordy if you use one.
+  const form = document.createElement("form");
+  form.method = method;
+  form.action = path;
+
+  for (const key in params) {
+    if (params.hasOwnProperty(key)) {
+      const hiddenField = document.createElement("input");
+      hiddenField.type = "hidden";
+      hiddenField.name = key;
+      hiddenField.value = params[key];
+
+      form.appendChild(hiddenField);
+    }
+  }
+
+  document.body.appendChild(form);
+  form.submit();
+}
 $(document).ready(function () {
   //  from PrimaryQuestionsGenerators
   const primaryQuestGen = new PrimaryQuestionsGenerator(quiz);
 
   document.addEventListener("primary-finished", function (event) {
-    let priQuestBinaryAnswers = event.detail.answer;
-
+    let priQuestBinaryAnswers = event.detail.result;
+    console.log(priQuestBinaryAnswers);
+    let answer_content = document.getElementsByClassName("content-answer");
+    post("/result", { result: priQuestBinaryAnswers });
+    // answer_content[0].innerHTML =
+    //   "<iframe src='https://docs.google.com/forms/d/e/1FAIpQLSd78pOgtZxEpCEV28NEvKl9HUEqTYlnHO1o3QxFiphqezbYOA/viewform?embedded=true' width='940' height='654' frameborder='0' marginheight='0' marginwidth='0'>Loading…</iframe>";
     //prepare the order for the question
-    let questionStack = prepareSecondaryQuestions(priQuestBinaryAnswers);
-    const secondQuestionGen = new SecondaryQuestionsGenerator(
-      questionStack,
-      ignoredQuestionIndices
-    );
+    // let questionStack = prepareSecondaryQuestions(priQuestBinaryAnswers);
+    // const secondQuestionGen = new SecondaryQuestionsGenerator(
+    //   questionStack,
+    //   ignoredQuestionIndices
+    // );
   });
 
   document.addEventListener("finished", function (event) {
