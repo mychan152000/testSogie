@@ -82,3 +82,8 @@ header:nth-child(1) {
     width: 900px;
     height: 900px;
 }
+@media only screen and (max-width:650px){
+    #feedback_btn{
+        width: 60vw;
+    }
+}
