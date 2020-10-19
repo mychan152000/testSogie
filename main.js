@@ -25,6 +25,4 @@ app.engine(
 app.set("view engine", "handlebars");
 // run - listen for request
 port = 3939;
-app.listen(process.env.port || port, function () {
-  console.log("now listening on port ", port);
-});
+app.listen(process.env.PORT || 5000);
